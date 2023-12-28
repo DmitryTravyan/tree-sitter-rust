@@ -4,17 +4,20 @@
 ((identifier) @constant
  (#match? @constant "^[A-Z][A-Z\\d_]+$'"))
 
-; Assume Ok, Err, Some, None is keyword
-((scoped_type_identifier
+; Assume Ok, Err, Some, None, Self is keyword
+((identifier
   path: (identifier) @type.builtin)
  (#match? @type.builtin "Ok"))
-((scoped_type_identifier
+((identifier
   path: (identifier) @type.builtin)
  (#match? @type.builtin "Err"))
-((scoped_type_identifier
+((identifier
   path: (identifier) @type.builtin)
  (#match? @type.builtin "Some"))
-((scoped_type_identifier
+((identifier
+  path: (identifier) @type.builtin)
+ (#match? @type.builtin "None"))
+((type_identifier
   path: (identifier) @type.builtin)
  (#match? @type.builtin "None"))
 
