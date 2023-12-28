@@ -5,21 +5,21 @@
  (#match? @constant "^[A-Z][A-Z\\d_]+$'"))
 
 ; Assume Ok, Err, Some, None, Self is keyword
-((identifier
-  path: (identifier) @type.builtin)
- (#match? @type.builtin "Ok"))
-((identifier
-  path: (identifier) @type.builtin)
- (#match? @type.builtin "Err"))
-((identifier
-  path: (identifier) @type.builtin)
- (#match? @type.builtin "Some"))
-((identifier
-  path: (identifier) @type.builtin)
- (#match? @type.builtin "None"))
-((type_identifier
-  path: (identifier) @type.builtin)
- (#match? @type.builtin "None"))
+;((identifier
+;  path: (identifier) @type.builtin)
+; (#match? @type.builtin "Ok"))
+;((identifier
+;  path: (identifier) @type.builtin)
+; (#match? @type.builtin "Err"))
+;((identifier
+;  path: (identifier) @type.builtin)
+; (#match? @type.builtin "Some"))
+;((identifier
+;  path: (identifier) @type.builtin)
+; (#match? @type.builtin "None"))
+;((type_identifier
+;  path: (identifier) @type.builtin)
+; (#match? @type.builtin "None"))
 
 ; Assume that uppercase names in paths are types
 ((scoped_identifier
