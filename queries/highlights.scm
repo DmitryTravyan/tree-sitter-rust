@@ -7,16 +7,16 @@
 ; Assume Ok, Err, Some, None is keyword
 ((scoped_type_identifier
   path: (identifier) @type.builtin)
- (#match? @type "Ok"))
+ (#match? @type.builtin "Ok"))
 ((scoped_type_identifier
   path: (identifier) @type.builtin)
- (#match? @type "Err"))
+ (#match? @type.builtin "Err"))
 ((scoped_type_identifier
   path: (identifier) @type.builtin)
- (#match? @type "Some"))
+ (#match? @type.builtin "Some"))
 ((scoped_type_identifier
   path: (identifier) @type.builtin)
- (#match? @type "None"))
+ (#match? @type.builtin "None"))
 
 ; Assume that uppercase names in paths are types
 ((scoped_identifier
